@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap');
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #363636;
+    background-image: url("https://media.contentapi.ea.com/content/dam/gin/images/2017/01/lotr-the-battle-for-middle-earth-keyart-min.jpg.adapt.crop191x100.628p.jpg");
+    color: #000000;
+    font-family: 'Grenze Gotisch', cursive, monospace;
+}
+.expandRules {
+    width: 20%;
+    height: 9%;
+    overflow: hidden;
+    position: absolute;
+    background-image: url("https://cdn.hipwallpaper.com/i/53/62/HaU7LR.png");
+    background-size: 290px 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: -1%;
+    margin-left: -3%;
+}
+.expandRules:hover {
+    height: 86%;
+    width: 20%;
+    transition: ease-in 1.5s;
+    margin-right: 5%;
+    overflow: hidden;
+}
+li {
+    list-style: none;
+    font-size: 18px;
+}
+.userInput {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 32.5%;
+    color: #FFFFFF;
+}
+#enterName {
+    font-size: 32px;
+}
+.userInput1 {
+    display: flex;
+    flex-direction: row;
+}
+.userInput2 {
+    display: flex;
+    flex-direction: row;
+}
+#player2Button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: 'Grenze Gotisch', cursive, monospace;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+} 
+#player1Button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: 'Grenze Gotisch', cursive, monospace;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+} 
+#leftButton {
+    color: #000000;
+    font-weight: bolder;
+    font-size: 28px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: 'Grenze Gotisch', cursive, monospace;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+#rightButton {
+    color: #000000;
+    font-weight: bolder;
+    font-size: 28px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: 'Grenze Gotisch', cursive, monospace;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.title {
+    width: 85%;
+    height: 9%;
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    padding-left: 8%;
+    font-size: 22px;
+    background-color: transparent;
+}
+.mainSection {
+    height: 91%;
+    width: 80%;
+    margin-left: 20%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+h3 {
+    font-size: 44px;
+    align-self: center;
+    margin-top: -5%;
+}
+.leftSide {
+    height: 100%;
+    width: 45%;
+    background-color: blue;
+    background-image: url("https://i.stack.imgur.com/TiXT2m.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rightSide {
+    height: 100%;
+    width: 45%;
+    background-color: crimson;
+    background-image: url("https://storytailer.com/wp-content/uploads/2014/12/eye-of-sauron-lord-of-the-rings-return-of-the-king.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+}
+#diceImageLeft {
+    width: 80%;
+    height: 70%;
+    background-color: darkgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-top: -5%;
+    visibility: hidden;
+}
+#diceImageRight {
+    width: 80%;
+    height: 70%;
+    background-color: darkgray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+    margin-top: -5%;
+    visibility: hidden;
+}
+#leftButton {
+    font-size: 24px;
+    margin-top: 2%;
+}
+#rightButton {
+    font-size: 24px;
+    margin-top: 2%;
+}
+.scoreBoard {
+    position: absolute;
+    margin-left: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+.scoreBoardTitle {
+    font-size: 37px;
+}
+.scoreDisplay {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

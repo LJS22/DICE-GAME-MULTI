@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="expandRules">
+        <h2>THE RULES</h2>
+        <ul>
+            <li>Roll the dice to<br>begin the game</li><br>
+            <li>The dice will appear<br>on the first roll</li><br>
+            <li>Every time you roll the <br>dice the score will add up</li><br>
+            <li>If your score passes 20<br>YOU WIN!</li><br>
+            <li>But if you roll a 1<br>at any point you lose and<br>start from 0</li><br>
+        </ul>
+    </div>
+    <div class="userInput">
+        <p id="enterName">ENTER NAME BELOW</p>
+        <div class="userInput1">
+            <input id="player1Input" type="text" placeholder="Player 1"><button id="player1Button">ENTER</button><br>
+        </div>
+        <div class="userInput2">
+            <input id="player2Input" type="text" placeholder="Player 2"><button id="player2Button">ENTER</button>
+        </div>
+    </div>
+    <div class="title">
+        <h1>THE DICE GAME</h1>
+    </div>
+    <div class="mainSection">
+        <div class="leftSide">
+            <h3 id="player1Name">PLAYER 1</h3>
+            <div id="diceImageLeft"></div>
+            <button id="leftButton">ROLL</button>
+        </div>
+        <div class="scoreBoard">
+            <div class="scoreBoardTitle">SCOREBOARD</div>
+            <div class="scoreDisplay">
+                <p>PLAYER 1:</p>
+                <p id="scoreDisplayLeft">PLAYER 1 SCORE</p>
+                <p>PLAYER 2:</p>
+                <p id="scoreDisplayRight">PLAYER 2 SCORE</p>
+            </div>
+        </div>
+        <div class="rightSide">
+            <h3 id="player2Name">PLAYER 2</h3>
+            <div id="diceImageRight"></div>
+            <button id="rightButton">ROLL</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
