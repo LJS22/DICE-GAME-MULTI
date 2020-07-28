@@ -25,9 +25,11 @@ let player2Score = document.getElementById("scoreDisplayRight")
 //Event and function to input your own name
 player1Button.addEventListener("click", () => {
     player1Name.textContent = player1Input.value;
+    player1Input.value = "";
 })
 player2Button.addEventListener("click", () => {
     player2Name.textContent = player2Input.value;
+    player2Input.value = "";
 })
 
 let totalScore1 = 0;
@@ -45,7 +47,9 @@ leftButton.addEventListener("click", () => {
     player1Score.textContent = totalScore1;
     if (totalScore1 > 19) {
         diceImageLeft.style.backgroundImage = "url(https://i.gifer.com/4SWL.gif)";
-        diceImageRight.style.backgroundImage = "url(https://thumbs.gfycat.com/LeftExcitableAfricanaugurbuzzard-size_restricted.gif)";
+        diceImageLeft.style.backgroundSize = "100% 100%";
+        diceImageRight.style.backgroundImage = "url(https://1.bp.blogspot.com/-99f6S73Z4hk/VRH2HD7PwaI/AAAAAAAABvs/cNLxpaZJdfM/s1600/tolkien%2Breaading%2Bday%2B6.png)";
+        diceImageRight.style.backgroundSize = "100% 100%";
         totalScore1 = 0;
     }
 })
@@ -62,7 +66,9 @@ rightButton.addEventListener("click", () => {
     player2Score.textContent = totalScore2;
     if (totalScore2 > 19) {
         diceImageLeft.style.backgroundImage = "url(https://thumbs.gfycat.com/LeftExcitableAfricanaugurbuzzard-size_restricted.gif)";
-        diceImageRight.style.backgroundImage = "url(https://i.gifer.com/4SWL.gif)";
+        diceImageLeft.style.backgroundSize = "100% 100%";
+        diceImageRight.style.backgroundImage = "url(https://i.pinimg.com/originals/81/2c/61/812c6173e8fc79e2a57c9b545718f18d.gif)";
+        diceImageRight.style.backgroundSize = "100% 100%";
         totalScore2 = 0;
     }
 })
@@ -73,7 +79,8 @@ function assignImage1() {
     let numberValue = Math.floor(Math.random() * 6) + 1;
     if (numberValue === 1) {
         diceImageLeft.style.backgroundImage = "url(https://thumbs.gfycat.com/LeftExcitableAfricanaugurbuzzard-size_restricted.gif)";
-        alert("YOU ROLLED A 1")
+        diceImageLeft.style.backgroundSize = "100% 100%";
+        alert("YOU ROLLED A 1");
         return numberValue;
     } else if (numberValue === 2) {
         diceImageLeft.style.backgroundImage = "url(img/dice2.png)";
@@ -98,8 +105,9 @@ function assignImage2() {
     //Variables for the random numbers
     let numberValue = Math.floor(Math.random() * 6) + 1;
     if (numberValue === 1) {
-        diceImageRight.style.backgroundImage = "url(https://thumbs.gfycat.com/LeftExcitableAfricanaugurbuzzard-size_restricted.gif)";
-        alert("YOU ROLLED A 1")
+        diceImageRight.style.backgroundImage = "url(https://1.bp.blogspot.com/-99f6S73Z4hk/VRH2HD7PwaI/AAAAAAAABvs/cNLxpaZJdfM/s1600/tolkien%2Breaading%2Bday%2B6.png)";
+        diceImageRight.style.backgroundSize = "100% 100%";
+        alert("YOU ROLLED A 1");
         return numberValue;
     } else if (numberValue === 2) {
         diceImageRight.style.backgroundImage = "url(img/dice2.png)";
